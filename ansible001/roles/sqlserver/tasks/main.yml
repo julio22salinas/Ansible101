@@ -1,2 +1,6 @@
 ---
-# tasks file for sqlserver
+- name: Instalación y configuración de un stack para web
+  hosts: sqlserver
+  remote_user: root
+  roles:
+- sqlserver
