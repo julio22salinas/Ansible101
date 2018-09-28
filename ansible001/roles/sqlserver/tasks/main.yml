@@ -1,2 +1,9 @@
 ---
-#task
+- name: Install MsSQL on RHEL
+  hosts: all
+  become: yes
+  vars:
+    db_name: testDB
+    db_host: localhost
+    db_user: SA
+    db_password: P@ssWORD!
