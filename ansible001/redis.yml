@@ -1,6 +1,6 @@
 ---
-- name: istall redis in nosqlserver
+- name: install redis in nosqlserver
   hosts: nosql
   remote_user: root
   roles:
-- nosqlserve
+- nosqlserver
