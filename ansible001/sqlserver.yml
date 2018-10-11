@@ -1,5 +1,5 @@
 ---
-- name: Instalación y configuración de un stack para sql
+- name: Instalación y configuración de MySQL
   hosts: sql
   remote_user: root
   roles:
