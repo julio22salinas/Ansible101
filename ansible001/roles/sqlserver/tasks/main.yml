@@ -1,16 +1,12 @@
 ---
 - name: add repositories
-  apt_repository: repo={{item}} state=present update_cache=yes
+  apt: name= {{item}} state=present 
   with_items:
-    - ppa:mssql-server/stable
+    - redis-server
 
-- name: instalación de sql
-  apt:
-    name: mssql-server
-    state: present
-
-- name: start mssql-server
+- name: start always redis
   service:
-    name: mssql-server
+    name: redis-server
     state: started
-enabled: yes
+    enable: yes
+ 
